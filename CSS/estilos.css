@@ -1,0 +1,120 @@
+html{
+	background-color : cyan;
+}
+
+@keyframes animation_test{
+	from{
+		background-color: #A7C6DA ;
+	}
+	to{
+		background-color: #F1DB4B;
+	}
+}
+@keyframes {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes label-animation{
+	from{
+		transform: rotate(360deg);
+	}
+	to{
+		transform: rotate(360deg);
+		margin-left: 85vw;
+	}
+}
+
+
+.label-container{
+	width: 100%
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.label{
+	width: 100px;
+	background-color: beige;
+	color: #902D41;
+	font-size: 1.3rem;
+	padding: 1rem;
+	border-radius: 10px;
+	text-align: center;
+	animation-name: label-animation;
+	animation-duration: 4s;
+	animation animation-timing-function: ease-in-out;  
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.loader-doble {
+	width: 64px;
+	height: 64px;
+	border: 16px solid #315C2B
+	border-top: 16px solid rgb(0, 171, 255);
+	border-bottom: 16px solid rgb(255, 115, 52)
+	border-radius:50%
+	animation: girar 2s ease-in-out infinite;
+}
+
+.loader{
+	width: 64px;
+	height: 64px;
+	border: 5px solid #C6C8EE;
+	border-top: 5PX solid #7FD189;
+	border-radius: 50%;
+	animation: girar 2s linear infinite;
+
+}
+
+.animada{
+	width: 100%
+	background-color: #DE6E4B;
+	color: white;
+	text-align: center;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	animation-name: animation_test;
+	animation-duration: 7s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+
+
+#marco{
+	border: 4px solid rgb(255, 122, 10);
+	border-radius: 10px;
+	margin: 2rem;
+	background-color: #5e2129;
+}
+
+article, aside{
+	border: 2px solid rgb(255, 122, 10);
+	margin: 1rem;
+	border-radius: 10px;
+	padding: 1rem;
+	background-color: black;
+
+}
+
+*{
+	padding: 2px;
+	margin: 1px;
+	color: #aaa;
+	text-align: center;
+}
+
+#experiencia{
+	border: 4px solid rgb(255, 122, 10);
+	border-radius: 10px;
+	margin: 2rem;
+	background-color: #5e2129;
+}
